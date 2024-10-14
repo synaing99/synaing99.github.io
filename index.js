@@ -126,11 +126,6 @@ let datata = [
 {"answer": "いぜん", "question": "以前", "hint": ""},
 ];
 
-// function checkAnswer() {
-//     document.getElementById("pQuestion").style = "color: red";
-// }
-// document.getElementById("frmForm").addEventListener("submit", checkAnswer);
-
 let currentQuestionIndex = 0;
 function showQuestion() {
     const currentQuestion = datata[currentQuestionIndex];
@@ -151,3 +146,9 @@ myForm.addEventListener("submit", (event) => {
     }
 })
 showQuestion();
+
+const mySkip = document.getElementById("mySkip");
+mySkip.addEventListener("click", (event) => {
+    currentQuestionIndex++
+    showQuestion();
+})
