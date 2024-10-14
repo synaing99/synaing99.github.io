@@ -20,3 +20,9 @@ input[type="text"]{
     width: auto;
     text-align: center;
 }
+button{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: small;
+}
