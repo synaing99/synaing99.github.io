@@ -8,7 +8,21 @@
 </head>
 <body>
     <py-script terminal>
-        print("Hello World")
+        import random
+        from data_jwords import varWordList
+        
+        wordsForQuiz = varWordList.copy()
+        
+        while input("start?"):
+            for x in random.sample(list(wordsForQuiz.keys()), k = len(wordsForQuiz)):
+                print(len(wordsForQuiz))
+                for y in wordsForQuiz[x]:
+                    while True:
+                        if input(f"{y[1]}... ") != y[0]:
+                            print(f"{'\033[31m' + y[2] + '\033[0m'}")
+                            continue
+                        print(f"{'\033[32m' + y[0] + '\033[0m'}")
+                        break
     </py-script>
 </body>
 </html>
