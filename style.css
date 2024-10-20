@@ -64,6 +64,7 @@ input[type="text"]{
     box-shadow: none;
     border: none;
     outline: none;
+    color: var(--primaryColor);
 }
 #Question{
     font-size: x-large;
