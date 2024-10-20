@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+    --primaryColor: #000;
+    --secondaryColor: #fff;
+}
+.darkTheme{
+    --primaryColor: #fff;
+    --secondaryColor: #000;
+}
+::placeholder{
+    opacity: 1;
+    color: var(--primaryColor)
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor)
+}
+#container{
+    display: grid;
+    gap: 30px;
+    grid-template: 
+        'QQ SS'
+        'AA SS'
+        'NN NN'
+}
+fieldset{
+    padding: 20px;
+    border: 3px solid var(--primaryColor);
+    border-radius: 10px;
+    box-shadow: 6px 6px 0 var(--primaryColor);
+}
+#field1{
+    grid-area: QQ;
+}
+#field2{
+    grid-area: AA;
+}
+#field3{
+    grid-area: SS;
+}
+#Skip{
+    grid-area: NN;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    border-radius: 10px;
+    padding: 5px;
+}
+label,
+input[type="text"]{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+#Question{
+    font-size: x-large;
+    font-weight: bold;
+}
+#Answer, #Hint{
+    font-size: medium;
+    font-weight: 400;
+}
+#lightText{
+    padding: 3px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+#darkText{
+    padding: 3px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+#Theme{
+    display: none;
+}
+#themeLabel{
+    padding: 6px 3px;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    #container{
+        grid-template: 
+            'QQ'
+            'AA'
+            'NN'
+            'SS'
+    }
+}

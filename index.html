@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>漢字クイズ<br><br></h1>
+    <div id="container">
+        <fieldset id="field1">
+            <legend>&ensp;問題&ensp;</legend>
+            <p id="Question">一番</p>
+            <p id="Hint"></p>
+        </fieldset>
+        <fieldset id="field2">
+            <legend>&ensp;回答&ensp;</legend>
+            <form id="Form1" action="#" method="post">
+                <input type="text" name="Answer" id="Answer" placeholder="。。。" autocomplete="off">
+            </form>
+        </fieldset>
+        <fieldset id="field3">
+            <legend>&ensp;設定&ensp;</legend>
+            <form id="Form2" action="#" method="post">
+                <input type="text" name="Filter" id="Filter" placeholder="漢字で絞り。。。" autocomplete="off"><br><br>
+                <input type="checkbox" name="Theme" id="Theme">
+                <label id="themeLabel" for="Theme">
+                    <span id="lightText">明</span>
+                    <span id="darkText">暗</span>
+                </label>
+            </form>
+        </fieldset>
+        <button id="Skip">次 &gt;&gt;</button>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
