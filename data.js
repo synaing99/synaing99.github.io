@@ -361,48 +361,142 @@ var wordsData = [
     {answer: "さかな", question: "魚", hint: "fish", sound: "さかな", kanji:"魚"},
     {answer: "にんぎょ", question: "人魚", hint: "mermaid", sound: "ぎょ", kanji:"魚"},
     {answer: "うおざ", question: "魚座", hint: "pisces", sound: "うお", kanji:"魚"},
-    ////////////////////////////////////// "不"
+    // "不"
+    {answer: "ふかのう", question: "不可能", hint: "impossible", sound: "ふ", kanji:"不"},
     // "世"
+    {answer: "せかい", question: "世界", hint: "world", sound: "せ", kanji:"世"},
+    {answer: "よのなか", question: "世の中", hint: "society", sound: "よ", kanji:"世"},
+    {answer: "じんせい", question: "人世", hint: "this world", sound: "せい", kanji:"世"},
     // "主"
-    // "乘"
+    {answer: "しゅじん", question: "主人", hint: "lord", sound: "しゅ", kanji:"主"},
+    {answer: "あるじ", question: "主", hint: "lord", sound: "あるじ", kanji:"主"},
+    {answer: "もちぬし", question: "持ち主", hint: "owner", sound: "ぬし", kanji:"主"},
+    {answer: "ぼうず", question: "坊主", hint: "monk", sound: "ず", kanji:"主"},
+    // "乗"
+    {answer: "のる", question: "乗る", hint: "ride", sound: "の", kanji:"乗"},
+    {answer: "じょうきゃく", question: "乗客", hint: "passenger", sound: "じょう", kanji:"乗"},
     // "事"
+    {answer: "だいじ", question: "大事", hint: "important", sound: "じ", kanji:"事"},
+    {answer: "しごと", question: "仕事", hint: "work", sound: "こと", kanji:"事"},
     // "京"
+    {answer: "とうきょう", question: "東京", hint: "city name", sound: "きょう", kanji:"京"},
+    {answer: "なんきんまち", question: "南京町", hint: "chinatown", sound: "きん", kanji:"京"},
     // "仕"
+    {answer: "しかた", question: "仕方", hint: "method", sound: "し", kanji:"仕"},
+    {answer: "つかえる", question: "仕える", hint: "serve", sound: "つか", kanji:"仕"},
     // "代"
+    {answer: "じだい", question: "時代", hint: "generation", sound: "だい", kanji:"代"},
+    {answer: "かわり", question: "代わり", hint: "replacement", sound: "か", kanji:"代"},
+    {answer: "ちよだ", question: "千代田", hint: "city name", sound: "よ", kanji:"代"},
+    {answer: "しろもの", question: "代物", hint: "prostitute", sound: "しろ", kanji:"代"},
     // "以"
+    {answer: "いがい", question: "以外", hint: "except", sound: "い", kanji:"以"},
     // "低"
+    {answer: "さいてい", question: "最低", hint: "worst", sound: "てい", kanji:"低"},
+    {answer: "ひくい", question: "低い", hint: "low", sound: "ひく", kanji:"低"},
     // "住"
+    {answer: "じゅうしょ", question: "住所", hint: "address", sound: "じゅう", kanji:"住"},
+    {answer: "すむ", question: "住む", hint: "live", sound: "す", kanji:"住"},
     // "体"
+    {answer: "たいりょく", question: "体力", hint: "stamina", sound: "たい", kanji:"体"},
+    {answer: "からだ", question: "体", hint: "body", sound: "からだ", kanji:"体"},
     // "作"
+    {answer: "せいさく", question: "制作", hint: "work", sound: "さく", kanji:"作"},
+    {answer: "つくる", question: "作る", hint: "make", sound: "つく", kanji:"作"},
+    {answer: "さぎょう", question: "作業", hint: "work", sound: "さ", kanji:"作"},
+    {answer: "さっか", question: "作家", hint: "author", sound: "さっ", kanji:"作"},
     // "使"
+    {answer: "つかう", question: "使う", hint: "use", sound: "つかう", kanji:"使"},
+    {answer: "しよう", question: "使用", hint: "use", sound: "し", kanji:"使"},
     // "元"
+    {answer: "げんき", question: "元気", hint: "wellness", sound: "げん", kanji:"元"},
+    {answer: "みみもと", question: "耳元", hint: "whisper", sound: "もと", kanji:"元"},
     // "兄"
+    {answer: "あに", question: "兄", hint: "brother", sound: "あに", kanji:"兄"},
+    {answer: "きょうだい", question: "兄弟", hint: "siblings", sound: "きょう", kanji:"兄"},
+    {answer: "けいまい", question: "兄妹", hint: "siblings", sound: "けい", kanji:"兄"},
     // "光"
+    {answer: "ひかりとかげ", question: "光と影", hint: "rise and fall", sound: "ひかり", kanji:"光"},
+    {answer: "えいこう", question: "栄光", hint: "glory", sound: "こう", kanji:"光"},
     // "写"
+    {answer: "しゃしん", question: "写真", hint: "photo", sound: "しゃ", kanji:"写"},
+    {answer: "うつる", question: "写る", hint: "photographed", sound: "うつ", kanji:"写"},
     // "冬"
+    {answer: "ふゆ", question: "冬", hint: "winter", sound: "ふゆ", kanji:"冬"},
+    {answer: "とうみん", question: "冬眠", hint: "hibernation", sound: "とう", kanji:"冬"},
     // "切"
+    {answer: "きる", question: "切る", hint: "cut", sound: "き", kanji:"切"},
+    {answer: "たいせつ", question: "大切", hint: "precious", sound: "せつ", kanji:"切"},
+    {answer: "いっさい", question: "一切", hint: "not at all", sound: "さい", kanji:"切"},
+    {answer: "きり", question: "切", hint: "cut", sound: "きり", kanji:"切"},
+    {answer: "きっぷ", question: "切符", hint: "ticket", sound: "きっ", kanji:"切"},
     // "勉"
+    {answer: "べんきょう", question: "勉強", hint: "study", sound: "べん", kanji:"勉"},
     // "動"
+    {answer: "こうどう", question: "行動", hint: "action", sound: "どう", kanji:"動"},
+    {answer: "うごく", question: "動く", hint: "movement", sound: "うご", kanji:"動"},
     // "区"
+    {answer: "くやくしょ", question: "区役所", hint: "ward office", sound: "く", kanji:"区"},
     // "医"
+    {answer: "いしゃ", question: "医者", hint: "doctor", sound: "い", kanji:"医者"},
     // "去"
+    {answer: "つれさる", question: "連れ去る", hint: "take away", sound: "さる", kanji:"去"},
+    {answer: "かこ", question: "過去", hint: "past", sound: "こ", kanji:"去"},
+    {answer: "きょねん", question: "去年", hint: "last year", sound: "きょ", kanji:"去"},
+    // "台"
+    {answer: "だい", question: "台", hint: "table", sound: "だい", kanji:"台"},
     // "合"
-    // "合"
+    {answer: "であい", question: "出会い", hint: "meeting", sound: "あい", kanji:"会"},
+    {answer: "しあい", question: "試合", hint: "match", sound: "あい", kanji:"会"},
+    {answer: "ごうかく", question: "合格", hint: "exam passed", sound: "ごう", kanji:"合"},
+    {answer: "がったい", question: "合体", hint: "fusion", sound: "がっ", kanji:"合"},
     // "同"
+    {answer: "どうじ", question: "同時", hint: "same time", sound: "どう", kanji:"同"},
+    {answer: "おなじ", question: "同じ", hint: "same", sound: "おな", kanji:"同"},
     // "味"
+    {answer: "いみ", question: "意味", hint: "meaning", sound: "み", kanji:"味"},
+    {answer: "あじ", question: "味", hint: "taste", sound: "あじ", kanji:"味"},
     // "品"
+    {answer: "しょうひん", question: "商品", hint: "products", sound: "ひん", kanji:"品"},
+    {answer: "しなもの", question: "品物", hint: "products", sound: "しな", kanji:"品"},
     // "員"
+    {answer: "てんいん", question: "店員", hint: "shop employee", sound: "いん", kanji:"員"},
     // "問"
+    {answer: "もんだい", question: "問題", hint: "questions", sound: "もん", kanji:"問"},
+    {answer: "といあわせ", question: "問い合わせ", hint: "inquire", sound: "と", kanji:"問"},
     // "回"
+    {answer: "こんかい", question: "今回", hint: "this time", sound: "かい", kanji:"回"},
+    {answer: "まわる", question: "回る", hint: "turn", sound: "まわ", kanji:"回"},
     // "図"
+    {answer: "ちず", question: "地図", hint: "map", sound: "ず", kanji:"図"},
+    {answer: "としょかん", question: "図書館", hint: "library", sound: "と", kanji:"図"},
+    {answer: "はかる", question: "図る", hint: "plan", sound: "はか", kanji:"図"},
     // "地"
+    {answer: "ちきゅう", question: "地球", hint: "earth", sound: "ち", kanji:"地"},
+    {answer: "じめん", question: "地面", hint: "ground", sound: "じ", kanji:"地"},
     // "堂"
+    {answer: "しょくどう", question: "食堂", hint: "diner hall", sound: "どう", kanji:"堂"},
     // "場"
+    {answer: "ばしょう", question: "場所", hint: "place", sound: "ば", kanji:"場"},
+    {answer: "とうじょう", question: "登場", hint: "entry", sound: "じょう", kanji:"場"},
     // "声"
+    {answer: "こえ", question: "声", hint: "voice", sound: "こえ", kanji:"声"},
+    {answer: "せいゆう", question: "声優", hint: "voice actor", sound: "せい", kanji:"声"},
     // "売"
+    {answer: "うる", question: "売る", hint: "sell", sound: "う", kanji:"売"},
+    {answer: "しょうばい", question: "商売", hint: "trade", sound: "ばい", kanji:"売"},
+    {answer: "うりあげ", question: "売上", hint: "sales", sound: "うり", kanji:"売"},
     // "夏"
+    {answer: "なつ", question: "夏", hint: "summer", sound: "なつ", kanji:"夏"},
+    {answer: "げちゅう", question: "夏中", hint: "summer period", sound: "げ", kanji:"夏"},
+    {answer: "かき", question: "夏季", hint: "summer season", sound: "か", kanji:"夏"},
     // "夕"
+    {answer: "ゆうひ", question: "夕日", hint: "evening sun", sound: "ゆう", kanji:"夕"},
+    {answer: "こんせき", question: "今夕", hint: "this evening", sound: "せき", kanji:"夕"},
     // "夜"
+    {answer: "よる", question: "夜", hint: "night", sound: "よる", kanji:"夜"},
+    {answer: "こんや", question: "今夜", hint: "tonight", sound: "や", kanji:"夜"},
+    {answer: "よぞら", question: "夜空", hint: "night sky", sound: "よ", kanji:"夜"},
     // "太"
     // "好"
     // "妹"
@@ -445,7 +539,7 @@ var wordsData = [
     // "有"
     // "服"
     // "朝"
-    // "村"
+    //////////////////////////////////////////////////////////////////////////////////// "村"
     // "林"
     // "森"
     // "業"
