@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        body {
+            height: 100vh;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            height: 100%;
+        }
+        input{
+            margin: 20px;
+            padding: 20px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form id="entryForm" action="#" >
+        <input type="text" name="Answer" id="firstItem" placeholder="Answer" autocomplete="off">
+        <input type="text" name="Question" placeholder="Question" autocomplete="off">
+        <input type="text" name="Hint" placeholder="Hint" autocomplete="off">
+        <input type="text" name="Sound" placeholder="Sound" autocomplete="off">
+        <input type="text" name="Kanji" placeholder="Kanji" autocomplete="off">
+        <input type="submit">
+    </form>
+    <script>
+        let formOne = document.getElementById("entryForm");
+        formOne.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const formData = new FormData(formOne);
+            
+            navigator.clipboard.writeText(
+                '{answer: "' + formData.get('Answer') + 
+                '", question: "' + formData.get('Question') + 
+                '", hint: "' + formData.get('Hint') + 
+                '", sound: "' + formData.get('Sound') + 
+                '", kanji:"' + formData.get('Kanji') + '"},');
+            formOne.reset();
+        })
+    </script>
+</body>
+</html>
